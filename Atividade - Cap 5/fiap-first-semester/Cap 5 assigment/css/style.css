@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 980px;
+  height: 45px;
+  display: flex;
+  background-color: #1b8e99;
+  display: flex;
+  margin-right: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  margin-top: 100px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  width: 194px;
+  height: 146px;
+  margin: 70px 0 0 12px;
+  z-index: 1;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-right: 10px;
+}
+
+a {
+  font-family: Arial;
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  transition: background-color 0.3s, outline 0.3s;
+}
+
+a:hover {
+  outline: 10px solid #92c9ce;
+  background-color: #92c9ce;
+}
+
+a span {
+  text-align: center;
+  display: block;
+}
+
+.drone-photo {
+  width: 980px;
+  height: 350px;
+}
+
+.header-red {
+  width: 980px;
+  height: 45px;
+  display: flex;
+  padding-left: 15px;
+  background-color: #660000; 
+  align-items: center;
+}
+
+.red-header-nav a {
+  font-size: 12px;
+  padding: 0;
+  color: white; 
+  background-color: #660000; 
+  transition: background-color 0.3s; 
+  transition: color 0s; 
+}
+
+.red-header-nav a:hover {
+  outline: 25px solid #ffffff;
+  background-color: #ffffff;
+  color: #660000;
+  transition: color 0s; 
+
+}
+.virtual-shop {
+  margin: 30px 0 20px 15px;
+  display: flex;
+  width: 980px;
+}
+
+.virtual-shop-title {
+  width: 85%;
+}
+
+.virtual-shop h2 {
+  font-family: Arial;
+  color: #660000;
+  font-weight: 700;
+}
+
+.virtual-shop hr {
+  position: relative;
+  width: 100%;
+  top: 10px;
+  border: none;
+  height: 3px;
+  background: #660000;
+  margin-bottom: 50px;
+}
+
+.virtual-shop img {
+  width: 125px;
+  height: 77px;
+}
+
+.products {
+  width: 950px;
+  display: flex;
+  margin-left: 15px;
+  gap: 25px;
+  border-bottom: 10px solid #444444;
+  padding-bottom: 20px;
+}
+
+.products h3 {
+  font-family: Tahoma;
+  text-align: center;
+  font-size: 17px;
+  padding: 7px;
+  font-weight: 550;
+}
+
+.drone1,
+.drone3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  border: 1px solid #1b8e99;
+}
+
+.drone2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  border: 1px solid #660000;
+}
+
+.drone1 h3,
+.drone3 h3 {
+  color: #1b8e99;
+  background-color: #d6eff2;
+  width: 100%;
+}
+
+.drone2 h3 {
+  color: #660000;
+  background-color: #d6eff2;
+  width: 100%;
+}
+
+.drone1 img,
+.drone3 img,
+.drone2 img {
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+
+.drone1 p,
+.drone3 p {
+  font-family: Tahoma;
+  font-size: 13px;
+  padding: 0px 10px 10px 10px;
+  color: #1b8e99;
+}
+
+.drone2 p {
+  font-family: Tahoma;
+  font-size: 13px;
+  padding: 0px 10px 10px 10px;
+  color: #660000;
+}
+
+.drone2 h3 {
+  color: #660000;
+  background-color: #ebcbcb;
+}
+
+.price-drone1,
+.price-drone3 {
+  width: 300px;
+  background-color: #1b8e99;
+  height: 96px;
+  padding-bottom: 15px;
+  display: flex;
+}
+
+.price-drone2 {
+  width: 300px;
+  background-color: #660000;
+  height: 96px;
+  padding-bottom: 15px;
+  display: flex;
+}
+
+.price-drone1 h2,
+.price-drone3 h2,
+.price-drone2 h2 {
+  font-family: "Tahoma";
+  padding: 20px 0px 0px 20px;
+  font-weight: 300;
+  font-size: 27px;
+  color: white;
+}
+
+.price-drone1 p,
+.price-drone2 p,
+.price-drone3 p {
+  font-family: "Tahoma";
+  padding: 0px 0px;
+  color: white;
+}
+
+.price-drone1 img,
+.price-drone2 img,
+.price-drone3 img {
+  width: 65px;
+  height: 65px;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.price-drone1 button,
+.price-drone2 button,
+.price-drone3 button {
+  margin: 10px 10px 0px 40px;
+  width: 70px;
+  height: 65px;
+  border: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: white;
+  transition: 0.2s ease-in-out;
+}
+
+.price-drone1 button:hover,
+.price-drone2 button:hover,
+.price-drone3 button:hover {
+  transition: 0.2s ease;
+  transform: scale(1.1);
+}
+
+.services {
+  margin: 30px 0 20px 15px;
+  display: flex;
+  width: 980px;
+}
+
+.services-title {
+  width: 85%;
+}
+
+.services h2 {
+  font-family: Arial;
+  color: #1c8e99;
+  font-weight: 700;
+}
+
+.services hr {
+  position: relative;
+  width: 100%;
+  top: 10px;
+  border: none;
+  height: 3px;
+  background: #1c8e99;
+  margin-bottom: 50px;
+}
+
+.services img {
+  width: 125px;
+  height: 77px;
+}
+
+.services-list {
+  width: 950px;
+  display: flex;
+  margin-left: 15px;
+  gap: 25px;
+  padding-bottom: 20px;
+}
+
+.services-list h3 {
+  font-family: Tahoma;
+  font-size: 17px;
+  padding: 7px;
+  font-weight: 550;
+}
+
+.service1,
+.service3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  border: 1px solid #660000;
+  border-bottom: 8px solid #660000;
+}
+
+.service2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  border: 1px solid #1b8e99;
+  border-bottom: 8px solid #1b8e99;
+}
+
+.service1 h3,
+.service3 h3 {
+  color: #660000;
+  width: 100%;
+}
+
+.service2 h3 {
+  color: #1b8e99;
+  width: 100%;
+}
+
+.service1 img,
+.service2 img,
+.service3 img {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.service1 p,
+.service3 p {
+  font-family: Tahoma;
+  font-size: 13px;
+  padding: 0px 10px 10px 10px;
+  margin-top: 15px;
+  color: #660000;
+}
+
+.service2 p {
+  font-family: Tahoma;
+  font-size: 13px;
+  margin-top: 15px;
+  padding: 0px 10px 10px 10px;
+  color: #1b8e99;
+}
+
+footer {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  height: 96px;
+  background-color: #1b8e99;
+  border-bottom: 26px solid #660000;
+}
+
+.footer-text {
+  width: 580px;
+  padding-left: 70px;
+}
+
+.footer-text p {
+  color: white;
+  font-family: "Tahoma";
+  font-size: 14px;
+}
+
+.footer-text span {
+  display: block;
+}
+
+.footer_drones {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 85%;
+}
+
+.footer_drone_movel {
+  position: relative;
+  left: 75px;
+}
+
+.footer-description {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 26px;
+  color: white;
+  background-color: #660000;
+}
+
+.img_professor {
+  position: relative;
+  bottom: 85px;
+}
